@@ -1,0 +1,140 @@
+1-Enumere y describa las características de C#.
+Compilación híbrida: 
+Para construir programas con C# se requiere de un compilador para traducir todo 
+el código fuente a un lenguaje que permita ejecutar la aplicación en una computadora. 
+C# se compila primero a un lenguaje intermedio y posteriormente al ejecutarse 
+es recompilado a lenguaje nativo/máquina.
+Orientado a objetos:
+El lenguaje ofrece una serie de características orientadas a objetos como soporte 
+para herencia, polimorfismo y encapsulamiento. El paradigma de programación orientada 
+a objetos se enfoca en en las relaciones entre clases y objetos.
+Orientado a componentes:
+También presenta características que permiten el desarrollo basado en componentes. 
+Un componente de software individual es un paquete de software o un módulo que 
+encapsula un conjunto de datos o funciones relacionadas.
+Seguridad de tipos:
+Es un lenguaje principalmente de tipado estático.
+Garbage Collection:
+Está integrado un programa especial que se encarga de la liberación de memoria 
+no utilizada en el segmento heap.
+Sistema de tipos unificado:
+Todos los tipos de datos en C#, incluyendo los primitivos, heredan de la clase 
+System.Object. Esto significa que todos los tipos de dato tienen una serie 
+de operaciones/funcionalidades en común.
+Case sensitive:
+es un lenguaje que distingue mayúsculas de minúsculas
+
+2-Explique la diferencia entre lenguajes de tipado estático y lenguaje de tipado dinámico.
+Tipado estático → Decimos que un lenguaje es de tipado estático cuando los 
+tipos de las variables tienen que definirse antes de compilar el programa. 
+Tipado dinámico → Decimos que un lenguaje es de tipado dinámico cuando los 
+tipos de las variables se definen durante la ejecución del programa.
+
+3-Defina sintaxis, semántica y vocabulario de una lenguaje de programación.
+La sintaxis define cómo debe estar escrito y estructurado un lenguaje para 
+construir sentencias válidas.
+La semántica es el signicado que surge de la combinación de esas sentencias 
+y expresiones con una sintaxis válida. 
+El vocabulario del lenguaje son una serie de palabras reservadas y operadores 
+que sirven para construir sentencias y expresiones siguiendo las reglas de sintaxis.
+
+4-Defina los siguientes términos: Sentencia (statement), variable y expresión 
+(expression). ¿Cómo se relacionan?
+Sentencia:
+Una sentencia es una instrucción que realiza una acción en un programa
+Variable:
+Una variable es un contenedor que almacena datos en la memoria durante la 
+ejecución del programa. 
+Expresion:
+Una expresión es una combinación de valores, variables, operadores y 
+funciones que se evalúa para producir un resultado.
+Una sentencia puede estar compuesta de múltiples variables y expresiones,
+trabajan juntos para permitir que los programas realicen tareas específicas 
+y tomen decisiones basadas en datos y cálculos..
+
+5-¿En qué se diferencian variables y constantes?
+Una variable es un contenedor cuyo valor puede cambiar durante la ejecución del programa
+Una constante es un valor que se establece una vez y no puede cambiar durante 
+la ejecución del programa
+
+6-¿Qué es el punto de entrada (entry point)? ¿Cuál es en los programas de C#?
+El método Main es el punto de entrada (entry point) de todos los programas en C#, 
+es decir, el primer método en ejecutarse.
+
+7-¿Qué es el Common Type System (CTS)?
+El(CTS) es un conjunto de reglas que establece cómo los tipos de datos son declarados, 
+utilizados y administrados en los programas escritos para la plataforma .NET. 
+Define cómo se representan los tipos de datos y cómo interactúan entre sí.
+
+8-Explique las diferencias entre los tipos de referencia y los tipos de valor.
+Los tipos de valor (value types):
+son tipos de dato representados por su valor real. Si son asignados a una variable, 
+esa variable obtendrá una nueva copia del valor. Todos los tipos de valor se 
+almacenan en la pila.
+Los tipos de referencia (reference types):
+al contrario, son tipos de dato representados por una referencia que apunta 
+a un sector de memoria donde se encuentra el valor real. Si son asignados 
+a una variable, esa variable almacenará la referencia y apuntará al valor 
+original. No se realiza ninguna copia del valor. 
+Todos los tipos de referencia se almacenan en el montón.
+
+9-¿Cuáles son las categorías de tipos de datos de .NET? Clasifique en 
+tipos de valor y tipos de referencia.
+Clases(class)Tipo de referencia
+Estructuras(struct)Tipo de valor
+Enumerados(enum)Tipo de valor
+Interfaces(interface)Tipo de referencia
+Delegados(delegate)Tipo de referencia
+
+10-¿Qué es un alias?
+Algunas de las palabras clave de C# como double, int o string son alias 
+(aliases) que representan tipos proveidos por la implementación de la 
+plataforma .NET donde se ejecuta C#. Por ejemplo, int es un alias 
+para el tipo System.Int32.
+
+11-Ordene los siguientes tipos de datos del menos preciso al 
+más preciso: decimal, float, double.
+float: El tipo de dato float en C# es de precisión simple y utiliza 32 bits 
+para representar números en punto flotante
+double: El tipo de dato double en C# es de precisión doble y utiliza 64 bits 
+para representar números en punto flotante.
+decimal: El tipo de dato decimal en C# es de precisión decimal y utiliza 128 bits 
+para representar números decimales de alta precisión.
+
+12-¿Qué son los tipos object y dynamic? ¿En qué se diferencian?
+Todos los tipos de datos en .NET derivan de un tipo de dato padre, la clase 
+System.Object. object es un alias de System.Object.
+dynamic es otro tipo especial que también puede almacenar cualquier valor. 
+La diferencia con object radica en que nos permite utilizar los atributos y 
+métodos del valor almacenado sin necesidad de un casteo.
+
+13-¿Para qué se usan los operadores nameof() y sizeof()?
+El operador nameof() se utiliza para obtener el nombre de un elemento en el 
+código en forma de cadena de texto (string).
+El operador sizeof() se utiliza para determinar el tamaño en bytes de un 
+tipo de dato en tiempo de compilación.
+
+14-¿Cuál es el valor por defecto de los tipos de datos en .NET?
+Por defecto los tipos de valor contienen del valor 0 si son numéricos, false si son 
+de tipo bool y '' si son de tipo char. Por otra parte, si no se inicializan, las 
+variables de tipos de referencia contendrán el valor null que indica que esa 
+variable no apunta a ninguna dirección de memoria.
+
+15-¿En qué consiste el cortocircuito lógico de los operadores && y ||?
+El cortocircuito lógico es un comportamiento especial de los operadores lógicos && y || 
+Este comportamiento hace que la evaluación de expresiones booleanas sea más eficiente 
+al detener la evaluación tan pronto como se conoce el resultado final. 
+
+16-¿Qué es el formato compuesto? ¿Cómo se aplica en el método WriteLine? Mencione 
+cómo configurar el ancho de los campos, justificación a la izquierda o derecha, 
+formatos estandar y formatos personalizados.
+Una cadena de formato compuesto está formada por texto fijo combinado con 
+marcadores de posición que corresponden con los elementos de la lista.
+
+
+
+
+
+
+
+

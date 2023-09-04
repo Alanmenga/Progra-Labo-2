@@ -1,0 +1,87 @@
+.NET
+1-¿Qué es .NET? ¿Cuáles son sus principales características?
+.NET (pronunciado como “dot net”) es una plataforma gratuita y de código abierto que 
+nos provee una serie de herramientas y programas para construir fácilmente una gran 
+variedad de software, así como el entorno necesario para ejecutarlo sobre distintos 
+sistemas operativos y tipos de arquitectura.
+	-Multi-plataforma:  Podemos implementar nuestros sitios web, aplicaciones para 
+	servidores y programas de consola también en Linux y MacOS.
+	-Open Source: El código fuente de .NET es público y es mantenido 
+	por miles de desarrolladores y compañias.
+	-Multi-lenguaje: .NET soporta varios lenguajes de programación (C#, F#, Visual Basic)
+
+2-¿Cómo se categorizan las versiones de .NET? Explique su relación con las políticas de 
+soporte y mantenimiento de dichas versiones.
+Las versiones de .NET se categorizan en dos grandes grupos que determinan 
+por cuántos años tendrán soporte (mantenimiento):
+	-Long-Term Support (LTS): Son versiones estables y que se actualizarán con poca frecuencia
+	-Current: Contienen las últimas mejoras y tienden a actualizarse con frecuencia
+Ambas reciben correcciones críticas relacionadas a temas de seguridad. 
+Debemos mantenernos al día con estas actualizaciones para obtener soporte
+
+3-¿Qué componentes forman parte de una implementación de .NET? Describa brevemente cada uno.
+Todas las implementaciones de .NET incluyen los siguientes componentes:
+	-Uno o más entornos de ejecución: es un programa encargado de administrar 
+	la ejecución de un programa.(Common Language Runtime (CLR)) 
+	-Una biblioteca de clases base: La base class library (BCL) es una serie 
+	de bibliotecas con funcionalidades de uso general que forman 
+	parte de los espacios de nombre Microsoft y System.
+	-Infraestructura y componentes comunes: Un marco de trabajo (framework) 
+	define una forma de trabajo y nos brinda un conjunto de herramientas de 
+	alto nivel para desarrollar un tipo de aplicación en concreto.
+	-Opcionalmente, uno a más frameworks para desarrollo de aplicaciones.
+	-Opcionalmente, herramientas de desarrollo adicionales.
+
+4-¿Qué es el Common Language Runtime?
+El Common Language Runtime (CLR): un programa que se encarga de todo lo necesario para 
+ejecutar una aplicación construida con .NET
+
+5-¿Qué es la Base Class Library?
+La Base Class Library (BCL): una enorme biblioteca con funcionalidades útiles 
+para construir software
+
+6-¿En qué se diferencia un marco de trabajo (framework) de una biblioteca (library)?
+Bibliotecas:
+	-Se trata de una serie de funcionalidades para realizar operaciones 
+	específicas, bien definidas.
+	-Se componen de una colección de funciones y objetos auxiliares.
+	-Nosotros invocamos las funciones de la biblioteca a necesidad.
+	-El desarrollador tiene libertad y control para usar la biblioteca como desee.
+Marcos de trabajo:
+	-Definen una forma de trabajo y nos brinda un conjunto de herramientas 
+	de alto nivel que permiten desarrollar ciertos tipos de aplicaciones con facilidad.
+	-Se componen de múltiples bibliotecas y otras herramientas.
+	-El framework invoca al código y maneja el flujo de ejecución.
+	-El framework tiene un comportamiento por defecto y define un estándar para el desarrollo
+
+7-Describa los estados y etapas del proceso de compilación de .NET.
+El proceso de compilación pasa por tres estados y se divide en dos etapas:
+High-Level(C# Code) --> Assembly Level(Intermediate Lenguage) --> Processor Level(Native Code)
+|---------------------Static Compilation--------------------|
+                        |----------------------Just-In Time Compilation--------------------|
+	-Etapa 1: Compilación estática
+	El código fuente (source code) de los programas construidos sobre .NET puede 
+	estar escrito con cualquiera de los lenguajes que soporta la plataforma( C#, F# y VB.NET.)
+	Cada lenguaje tiene su propio compilador. El compilador se encarga de traducir el 
+	código fuente a un lenguaje ensamblador conocido como lenguaje intermedio (intermediate language).
+	El compilador se ejecuta cuando un desarrollador o proceso automatizado dispara el proceso de construcción (build).
+	El resultado de la compilación serán archivos que contendrán el lenguaje intermedio y 
+	serán aquellos que se distribuirán a los usuarios finales. En Windows estos archivos llevan la 
+	extensión .exe para ejecutables y .dll para bibliotecas.
+	-Etapa 2: Compilación just-in-time
+	Cuando ejecutamos un programa de .NET, el sistema operativo invoca al Common Language Runtime. 
+	Luego, el CLR compila el lenguaje intermedio a lenguaje nativo (máquina) en un proceso que se 
+	conoce como compilación just-in-time (JIT).
+
+8-Explique y compare tiempo de compilación y tiempo de ejecución.
+	-Se denomina tiempo de compilación (compile-time) al intervalo de tiempo en el que un compilador compila 
+	código escrito en un lenguaje de programación a una forma de código ejecutable por una máquina.
+	El compilador normalmente realiza un chequeo de sintaxis y una optimización del código generado.
+	El tiempo de compilación no sucede en los lenguajes interpretados debido a que estos no necesitan compilarse.
+	-Se denomina tiempo de ejecución (runtime) al intervalo de tiempo en el que un programa de computadora 
+	se ejecuta en un sistema operativo. 
+	 Este tiempo se inicia con la puesta en memoria principal del programa, por lo que el sistema operativo 
+	comienza a ejecutar sus instrucciones. El intervalo finaliza en el momento en que este envía al sistema 
+	operativo la señal de terminación
+
+	
