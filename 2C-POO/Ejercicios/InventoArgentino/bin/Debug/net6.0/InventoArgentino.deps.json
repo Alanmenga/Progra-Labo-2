@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "InventoArgentino/1.0.0": {
+        "dependencies": {
+          "E4-Boligrafo": "1.0.0"
+        },
+        "runtime": {
+          "InventoArgentino.dll": {}
+        }
+      },
+      "E4-Boligrafo/1.0.0": {
+        "runtime": {
+          "E4-Boligrafo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "InventoArgentino/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "E4-Boligrafo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
