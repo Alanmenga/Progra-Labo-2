@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Biblioteca/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Biblioteca.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Biblioteca.dll": {}
+        }
+      },
+      "Formularios/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/Formularios.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Formularios.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Biblioteca/1.0.0": {
+      "type": "project",
+      "path": "../Biblioteca/Biblioteca.csproj",
+      "msbuildProject": "../Biblioteca/Biblioteca.csproj"
+    },
+    "Formularios/1.0.0": {
+      "type": "project",
+      "path": "../Formularios/Formularios.csproj",
+      "msbuildProject": "../Formularios/Formularios.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Biblioteca >= 1.0.0",
+      "Formularios >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\ICBC\\.nuget\\packages\\": {}
@@ -33,7 +68,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Biblioteca\\Biblioteca.csproj": {
+              "projectPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Biblioteca\\Biblioteca.csproj"
+            },
+            "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Formularios\\Formularios.csproj": {
+              "projectPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Formularios\\Formularios.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -56,13 +98,19 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "frameworkReferences": {
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          }
-        },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "El proyecto Formularios no es compatible con net6.0 (.NETCoreApp,Version=v6.0). El proyecto Formularios admite: net6.0-windows7.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "Formularios",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

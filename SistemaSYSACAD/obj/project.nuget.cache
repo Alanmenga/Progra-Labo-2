@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "9eB6znAh+suUbIk/DhqgFK5lZEN+rW330KxHtQjZ/c32x0w8c+krIABTknwT6WkIXOgpyzu1twtXIyrZ74CrRA==",
-  "success": true,
+  "dgSpecHash": "f6CxQQOWGXlRv6halMLk8xQN3mnjUGR+zY6mvBx3bB+yDhuQVYqp7GgIoSea1QIBzNFnvl8TriPYUNTASIP1qw==",
+  "success": false,
   "projectFilePath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\SistemaSYSACAD\\SistemaSYSACAD.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "El proyecto Formularios no es compatible con net6.0 (.NETCoreApp,Version=v6.0). El proyecto Formularios admite: net6.0-windows7.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "Formularios",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

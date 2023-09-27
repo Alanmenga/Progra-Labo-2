@@ -4,14 +4,14 @@
     "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\SistemaSYSACAD\\SistemaSYSACAD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\SistemaSYSACAD\\SistemaSYSACAD.csproj": {
+    "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Biblioteca\\Biblioteca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\SistemaSYSACAD\\SistemaSYSACAD.csproj",
-        "projectName": "SistemaSYSACAD",
-        "projectPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\SistemaSYSACAD\\SistemaSYSACAD.csproj",
+        "projectUniqueName": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Biblioteca\\Biblioteca.csproj",
+        "projectName": "Biblioteca",
+        "projectPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Biblioteca\\Biblioteca.csproj",
         "packagesPath": "C:\\Users\\ICBC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\SistemaSYSACAD\\obj\\",
+        "outputPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Biblioteca\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ICBC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -55,6 +55,125 @@
               "privateAssets": "all"
             }
           },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Formularios\\Formularios.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Formularios\\Formularios.csproj",
+        "projectName": "Formularios",
+        "projectPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Formularios\\Formularios.csproj",
+        "packagesPath": "C:\\Users\\ICBC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Formularios\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ICBC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Biblioteca\\Biblioteca.csproj": {
+                "projectPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Biblioteca\\Biblioteca.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\SistemaSYSACAD\\SistemaSYSACAD.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\SistemaSYSACAD\\SistemaSYSACAD.csproj",
+        "projectName": "SistemaSYSACAD",
+        "projectPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\SistemaSYSACAD\\SistemaSYSACAD.csproj",
+        "packagesPath": "C:\\Users\\ICBC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\SistemaSYSACAD\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ICBC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Biblioteca\\Biblioteca.csproj": {
+                "projectPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Biblioteca\\Biblioteca.csproj"
+              },
+              "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Formularios\\Formularios.csproj": {
+                "projectPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Formularios\\Formularios.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
