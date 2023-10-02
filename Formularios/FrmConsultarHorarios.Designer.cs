@@ -28,43 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            buttonLimpiar = new Button();
             buttonCancelar = new Button();
-            buttonInscribir = new Button();
+            buttonGuardar = new Button();
+            listBoxCursosInsc = new ListBox();
             SuspendLayout();
-            // 
-            // buttonLimpiar
-            // 
-            buttonLimpiar.BackColor = Color.FromArgb(128, 128, 255);
-            buttonLimpiar.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonLimpiar.Location = new Point(215, 325);
-            buttonLimpiar.Name = "buttonLimpiar";
-            buttonLimpiar.Size = new Size(98, 49);
-            buttonLimpiar.TabIndex = 5;
-            buttonLimpiar.Text = "Limpiar";
-            buttonLimpiar.UseVisualStyleBackColor = false;
             // 
             // buttonCancelar
             // 
             buttonCancelar.BackColor = Color.FromArgb(128, 128, 255);
             buttonCancelar.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonCancelar.Location = new Point(371, 325);
+            buttonCancelar.Location = new Point(315, 336);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(98, 49);
-            buttonCancelar.TabIndex = 6;
+            buttonCancelar.TabIndex = 2;
             buttonCancelar.Text = "Cancelar";
             buttonCancelar.UseVisualStyleBackColor = false;
+            buttonCancelar.Click += buttonCancelar_Click;
             // 
-            // buttonInscribir
+            // buttonGuardar
             // 
-            buttonInscribir.BackColor = Color.FromArgb(128, 128, 255);
-            buttonInscribir.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonInscribir.Location = new Point(58, 325);
-            buttonInscribir.Name = "buttonInscribir";
-            buttonInscribir.Size = new Size(110, 49);
-            buttonInscribir.TabIndex = 4;
-            buttonInscribir.Text = "Inscribirse";
-            buttonInscribir.UseVisualStyleBackColor = false;
+            buttonGuardar.BackColor = Color.FromArgb(128, 128, 255);
+            buttonGuardar.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonGuardar.Location = new Point(126, 336);
+            buttonGuardar.Name = "buttonGuardar";
+            buttonGuardar.Size = new Size(110, 49);
+            buttonGuardar.TabIndex = 1;
+            buttonGuardar.Text = "Guardar";
+            buttonGuardar.UseVisualStyleBackColor = false;
+            // 
+            // listBoxCursosInsc
+            // 
+            listBoxCursosInsc.FormattingEnabled = true;
+            listBoxCursosInsc.ItemHeight = 15;
+            listBoxCursosInsc.Location = new Point(59, 23);
+            listBoxCursosInsc.Name = "listBoxCursosInsc";
+            listBoxCursosInsc.Size = new Size(411, 274);
+            listBoxCursosInsc.TabIndex = 0;
             // 
             // FrmConsultarHorarios
             // 
@@ -72,20 +71,20 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDark;
             ClientSize = new Size(558, 428);
-            Controls.Add(buttonLimpiar);
+            Controls.Add(listBoxCursosInsc);
             Controls.Add(buttonCancelar);
-            Controls.Add(buttonInscribir);
+            Controls.Add(buttonGuardar);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "FrmConsultarHorarios";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Horarios";
+            Load += FrmConsultarHorarios_Load;
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Button buttonLimpiar;
         private Button buttonCancelar;
-        private Button buttonInscribir;
+        private Button buttonGuardar;
+        private ListBox listBoxCursosInsc;
     }
 }

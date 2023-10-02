@@ -57,6 +57,7 @@
             buttonMostrarEstudiantes.TabIndex = 9;
             buttonMostrarEstudiantes.Text = "Realizar Pagos";
             buttonMostrarEstudiantes.UseVisualStyleBackColor = false;
+            buttonMostrarEstudiantes.Click += buttonMostrarEstudiantes_Click;
             // 
             // buttonGestionarCursos
             // 

@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Formularios\\Formularios.csproj",
+      "projectUniqueName": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri2023\\Progra-Labo-2\\Formularios\\Formularios.csproj",
       "projectName": "Formularios",
-      "projectPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Formularios\\Formularios.csproj",
+      "projectPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri2023\\Progra-Labo-2\\Formularios\\Formularios.csproj",
       "packagesPath": "C:\\Users\\ICBC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Formularios\\obj\\",
+      "outputPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri2023\\Progra-Labo-2\\Formularios\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ICBC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Biblioteca\\Biblioteca.csproj": {
-              "projectPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Biblioteca\\Biblioteca.csproj"
+            "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri2023\\Progra-Labo-2\\Biblioteca\\Biblioteca.csproj": {
+              "projectPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri2023\\Progra-Labo-2\\Biblioteca\\Biblioteca.csproj"
             }
           }
         }

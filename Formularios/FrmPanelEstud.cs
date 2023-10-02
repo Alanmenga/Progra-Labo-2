@@ -37,5 +37,12 @@ namespace Formularios
             this.Close();
             frmConsultarHorarios.Show();
         }
+
+        private void buttonMostrarEstudiantes_Click(object sender, EventArgs e)
+        {
+            FrmRealizarPagos frmRealizarPagos = new FrmRealizarPagos();
+            this.Close();
+            frmRealizarPagos.Show();
+        }
     }
 }

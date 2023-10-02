@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Biblioteca\\Biblioteca.csproj",
+      "projectUniqueName": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri2023\\Progra-Labo-2\\Biblioteca\\Biblioteca.csproj",
       "projectName": "Biblioteca",
-      "projectPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Biblioteca\\Biblioteca.csproj",
+      "projectPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri2023\\Progra-Labo-2\\Biblioteca\\Biblioteca.csproj",
       "packagesPath": "C:\\Users\\ICBC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri 2023\\Progra-Labo-2\\Biblioteca\\obj\\",
+      "outputPath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri2023\\Progra-Labo-2\\Biblioteca\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ICBC\\AppData\\Roaming\\NuGet\\NuGet.Config",

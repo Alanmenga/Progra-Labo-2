@@ -24,3 +24,30 @@ C:\Users\ICBC\Desktop\Facu\Seg-Cuatri 2023\Progra-Labo-2\Formularios\obj\Debug\n
 C:\Users\ICBC\Desktop\Facu\Seg-Cuatri 2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.FrmPanelEstud.resources
 C:\Users\ICBC\Desktop\Facu\Seg-Cuatri 2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.FrmInscCurso.resources
 C:\Users\ICBC\Desktop\Facu\Seg-Cuatri 2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.FrmConsultarHorarios.resources
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\bin\Debug\net6.0-windows\Formularios.exe
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\bin\Debug\net6.0-windows\Formularios.deps.json
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\bin\Debug\net6.0-windows\Formularios.runtimeconfig.json
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\bin\Debug\net6.0-windows\Formularios.dll
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\bin\Debug\net6.0-windows\Formularios.pdb
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\bin\Debug\net6.0-windows\Biblioteca.dll
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\bin\Debug\net6.0-windows\Biblioteca.pdb
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.csproj.AssemblyReference.cache
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.FrmConsultarHorarios.resources
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.FrmGestionarCursos.resources
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.FrmInscCurso.resources
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.FrmLogin.resources
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.FrmPanelAdmin.resources
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.FrmPanelEstud.resources
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.FrmRegistEstud.resources
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.csproj.GenerateResource.cache
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.AssemblyInfoInputs.cache
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.AssemblyInfo.cs
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.csproj.CoreCompileInputs.cache
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.csproj.CopyComplete
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.dll
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\refint\Formularios.dll
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.pdb
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.genruntimeconfig.cache
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\ref\Formularios.dll
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.FrmRealizarPagos.resources
