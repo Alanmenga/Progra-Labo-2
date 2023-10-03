@@ -68,7 +68,17 @@ namespace Biblioteca
             listaEstudiantes.Add(estudianteNuevo);
         }
 
+        public Estudiante RecuperarEstudianteConUsuario(string usuarioBuscado)
+        {
+            Estudiante estudianteEncontrado = listaEstudiantes.FirstOrDefault(est => est.usuario == usuarioBuscado);
+            return estudianteEncontrado;
+        }
 
+        public static Estudiante RecuperarEstudianteConLegajo(int legajoBuscado)
+        {
+            Estudiante estudianteEncontrado = listaEstudiantes.FirstOrDefault(est => est.legajo == legajoBuscado);
+            return estudianteEncontrado;
+        }
 
         //public static void MostrarEstudiantes()
         //{

@@ -14,6 +14,8 @@ namespace Biblioteca
     public class Usuario
     {
         public string usuario { get; }
+        //La contraseña tiene que guardarse de forma hasheada
+        //La contraseña tiene que guardarse de forma hasheada
         public string contraseña { get; }
         public Rol rol { get; }
         public static List<Usuario> listaUsuarios = new List<Usuario>()
