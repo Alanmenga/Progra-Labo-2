@@ -17,7 +17,7 @@ namespace Formularios
             {
                 if(Usuario.ObtenerRolUsuario(textBoxUsuario.Text) == Rol.administrador)
                 {
-                    new Sesion(textBoxUsuario.Text, DateTime.Now);
+                    //new Sesion(textBoxUsuario.Text, DateTime.Now);
                     FrmPanelAdmin frmPanelAdmin = new FrmPanelAdmin();
                     this.Hide();
                     frmPanelAdmin.Show();

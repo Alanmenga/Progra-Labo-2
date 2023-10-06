@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "YO/1pC35MDZnsuT64G6cpRfMyeSCBro82bD0b5Roc2+8IZ9/v/GXDLLcVKVSNhbc05mtFKciv+oV1klsy0kWIg==",
+  "dgSpecHash": "kPAInoC/pIiH6KrLxvOzFZpgmW9Hnwos4SVNg3/bLvXp/5q/t97qJN2pm/lTuXTY/Y7xeHvwKZmGfAZMgr+gFA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri2023\\Progra-Labo-2\\Formularios\\Formularios.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ICBC\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

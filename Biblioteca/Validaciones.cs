@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Biblioteca
 {
-    internal class Validaciones
+    public class Validaciones
     {
         public static bool ValidarNombre(string nombre)
         {
@@ -51,5 +51,64 @@ namespace Biblioteca
             string patron = @"^[A-Za-z0-9]{8}$";
             return Regex.IsMatch(contraseña, patron);
         }
+
+        public bool ValidarDniEstudianteExistente(int dniBuscado)
+        {
+            foreach (Estudiante estudiante in Estudiante.listaEstudiantes)
+            {
+                if (estudiante.dni == dniBuscado)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        public bool ValidarCorreoEstudianteExistente(string correoBuscado)
+        {
+            foreach (Estudiante estudiante in Estudiante.listaEstudiantes)
+            {
+                if (estudiante.correoElectronico == correoBuscado)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        public bool ValidarUsuarioExistente(string usuarioBuscado)
+        {
+            foreach (Estudiante estudiante in Estudiante.listaEstudiantes)
+            {
+                if (estudiante.usuario == usuarioBuscado)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public bool ValidarNombreCursoExistente(string nombreBuscado)
+        {
+            foreach (Curso curso in Curso.listaCursos)
+            {
+                if (curso.nombre == nombreBuscado)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public bool ValidarCodigoCursoExistente(string codigo)
+        {
+            foreach (Curso curso in Curso.listaCursos)
+            {
+                if (curso.codigo == codigo)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
     }
 }

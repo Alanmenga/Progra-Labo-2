@@ -20,3 +20,4 @@ C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Biblioteca\obj\Debug\net
 C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Biblioteca\obj\Debug\net6.0\refint\Biblioteca.dll
 C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Biblioteca\obj\Debug\net6.0\Biblioteca.pdb
 C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Biblioteca\obj\Debug\net6.0\ref\Biblioteca.dll
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Biblioteca\obj\Debug\net6.0\Biblioteca.csproj.AssemblyReference.cache

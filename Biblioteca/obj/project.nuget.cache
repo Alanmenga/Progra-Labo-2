@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "NTyAt9aEWXavqloVRB5NiAJJVXYKH43W8SP+3YvBW2Tr1gSZlRM5b0GLr/JTsz48zk2T1SQX+dZ98yC12CQnRA==",
+  "dgSpecHash": "zFEpH4z08woB8LUYRlirFoyaiQaEzmloujTefk0Rt8aNt+mBtGWqvduCykFVCGDtf19tIxdA/HbuGf5wx+w55A==",
   "success": true,
   "projectFilePath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri2023\\Progra-Labo-2\\Biblioteca\\Biblioteca.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ICBC\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -46,16 +46,18 @@
             textBoxTelefono = new TextBox();
             checkBoxCambiarContra = new CheckBox();
             buttonLimpiar = new Button();
+            textBoxUsuario = new TextBox();
+            labelUsuario = new Label();
             SuspendLayout();
             // 
             // buttonAgregar
             // 
             buttonAgregar.BackColor = Color.FromArgb(128, 128, 255);
             buttonAgregar.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonAgregar.Location = new Point(23, 445);
+            buttonAgregar.Location = new Point(23, 495);
             buttonAgregar.Name = "buttonAgregar";
             buttonAgregar.Size = new Size(111, 46);
-            buttonAgregar.TabIndex = 15;
+            buttonAgregar.TabIndex = 17;
             buttonAgregar.Text = "Agregar";
             buttonAgregar.UseVisualStyleBackColor = false;
             buttonAgregar.Click += buttonAgregar_Click;
@@ -64,10 +66,10 @@
             // 
             buttonCancelar.BackColor = Color.FromArgb(128, 128, 255);
             buttonCancelar.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonCancelar.Location = new Point(304, 445);
+            buttonCancelar.Location = new Point(304, 495);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(111, 46);
-            buttonCancelar.TabIndex = 17;
+            buttonCancelar.TabIndex = 19;
             buttonCancelar.Text = "Cancelar";
             buttonCancelar.UseVisualStyleBackColor = false;
             buttonCancelar.Click += buttonCancelar_Click;
@@ -76,6 +78,7 @@
             // 
             textBoxNombre.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxNombre.Location = new Point(150, 39);
+            textBoxNombre.MaxLength = 30;
             textBoxNombre.Name = "textBoxNombre";
             textBoxNombre.Size = new Size(218, 33);
             textBoxNombre.TabIndex = 1;
@@ -84,6 +87,7 @@
             // 
             textBoxApellido.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxApellido.Location = new Point(150, 87);
+            textBoxApellido.MaxLength = 30;
             textBoxApellido.Name = "textBoxApellido";
             textBoxApellido.Size = new Size(218, 33);
             textBoxApellido.TabIndex = 3;
@@ -92,14 +96,17 @@
             // 
             textBoxDni.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxDni.Location = new Point(150, 136);
+            textBoxDni.MaxLength = 8;
             textBoxDni.Name = "textBoxDni";
             textBoxDni.Size = new Size(218, 33);
             textBoxDni.TabIndex = 5;
+            textBoxDni.KeyPress += textBoxDni_KeyPress;
             // 
             // textBoxDireccion
             // 
             textBoxDireccion.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxDireccion.Location = new Point(150, 185);
+            textBoxDireccion.MaxLength = 40;
             textBoxDireccion.Name = "textBoxDireccion";
             textBoxDireccion.Size = new Size(218, 33);
             textBoxDireccion.TabIndex = 7;
@@ -168,24 +175,26 @@
             // 
             labelContraseña.AutoSize = true;
             labelContraseña.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            labelContraseña.Location = new Point(26, 333);
+            labelContraseña.Location = new Point(26, 383);
             labelContraseña.Name = "labelContraseña";
             labelContraseña.Size = new Size(122, 25);
-            labelContraseña.TabIndex = 12;
+            labelContraseña.TabIndex = 14;
             labelContraseña.Text = "Contraseña:  ";
             // 
             // textBoxContraseña
             // 
             textBoxContraseña.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            textBoxContraseña.Location = new Point(150, 330);
+            textBoxContraseña.Location = new Point(150, 380);
+            textBoxContraseña.MaxLength = 10;
             textBoxContraseña.Name = "textBoxContraseña";
             textBoxContraseña.Size = new Size(218, 33);
-            textBoxContraseña.TabIndex = 13;
+            textBoxContraseña.TabIndex = 15;
             // 
             // textBoxCorreo
             // 
             textBoxCorreo.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxCorreo.Location = new Point(150, 281);
+            textBoxCorreo.MaxLength = 50;
             textBoxCorreo.Name = "textBoxCorreo";
             textBoxCorreo.Size = new Size(218, 33);
             textBoxCorreo.TabIndex = 11;
@@ -194,19 +203,21 @@
             // 
             textBoxTelefono.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBoxTelefono.Location = new Point(150, 232);
+            textBoxTelefono.MaxLength = 10;
             textBoxTelefono.Name = "textBoxTelefono";
             textBoxTelefono.Size = new Size(218, 33);
             textBoxTelefono.TabIndex = 9;
+            textBoxTelefono.KeyPress += textBoxTelefono_KeyPress;
             // 
             // checkBoxCambiarContra
             // 
             checkBoxCambiarContra.AutoSize = true;
             checkBoxCambiarContra.CheckAlign = ContentAlignment.MiddleRight;
             checkBoxCambiarContra.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            checkBoxCambiarContra.Location = new Point(26, 384);
+            checkBoxCambiarContra.Location = new Point(26, 434);
             checkBoxCambiarContra.Name = "checkBoxCambiarContra";
             checkBoxCambiarContra.Size = new Size(270, 29);
-            checkBoxCambiarContra.TabIndex = 14;
+            checkBoxCambiarContra.TabIndex = 16;
             checkBoxCambiarContra.Text = "Debe cambiar su contraseña";
             checkBoxCambiarContra.TextAlign = ContentAlignment.MiddleCenter;
             checkBoxCambiarContra.UseVisualStyleBackColor = true;
@@ -215,20 +226,41 @@
             // 
             buttonLimpiar.BackColor = Color.FromArgb(128, 128, 255);
             buttonLimpiar.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonLimpiar.Location = new Point(166, 445);
+            buttonLimpiar.Location = new Point(166, 495);
             buttonLimpiar.Name = "buttonLimpiar";
             buttonLimpiar.Size = new Size(111, 46);
-            buttonLimpiar.TabIndex = 16;
+            buttonLimpiar.TabIndex = 18;
             buttonLimpiar.Text = "Limpiar";
             buttonLimpiar.UseVisualStyleBackColor = false;
             buttonLimpiar.Click += buttonLimpiar_Click;
+            // 
+            // textBoxUsuario
+            // 
+            textBoxUsuario.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxUsuario.Location = new Point(150, 329);
+            textBoxUsuario.MaxLength = 50;
+            textBoxUsuario.Name = "textBoxUsuario";
+            textBoxUsuario.Size = new Size(218, 33);
+            textBoxUsuario.TabIndex = 13;
+            // 
+            // labelUsuario
+            // 
+            labelUsuario.AutoSize = true;
+            labelUsuario.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            labelUsuario.Location = new Point(26, 332);
+            labelUsuario.Name = "labelUsuario";
+            labelUsuario.Size = new Size(86, 25);
+            labelUsuario.TabIndex = 12;
+            labelUsuario.Text = "Usuario: ";
             // 
             // FrmRegistEstud
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDark;
-            ClientSize = new Size(466, 540);
+            ClientSize = new Size(466, 591);
+            Controls.Add(textBoxUsuario);
+            Controls.Add(labelUsuario);
             Controls.Add(buttonLimpiar);
             Controls.Add(checkBoxCambiarContra);
             Controls.Add(textBoxContraseña);
@@ -275,5 +307,7 @@
         private TextBox textBoxTelefono;
         private CheckBox checkBoxCambiarContra;
         private Button buttonLimpiar;
+        private TextBox textBoxUsuario;
+        private Label labelUsuario;
     }
 }

@@ -37,5 +37,12 @@ namespace Formularios
             this.Close();
             frmGestionarCursos.Show();
         }
+
+        private void buttonMostrarEstudiante_Click(object sender, EventArgs e)
+        {
+            FrmMostrarEstudiantes frmMostrarEstudiantes = new FrmMostrarEstudiantes();
+            this.Close();
+            frmMostrarEstudiantes.Show();
+        }
     }
 }

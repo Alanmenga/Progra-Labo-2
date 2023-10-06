@@ -33,6 +33,7 @@
             buttonEliminar = new Button();
             buttonCancelar = new Button();
             listBoxCursos = new ListBox();
+            label2 = new Label();
             SuspendLayout();
             // 
             // buttonAgregar
@@ -86,11 +87,20 @@
             listBoxCursos.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             listBoxCursos.FormattingEnabled = true;
             listBoxCursos.ItemHeight = 25;
-            listBoxCursos.Location = new Point(12, 37);
+            listBoxCursos.Location = new Point(12, 65);
             listBoxCursos.Name = "listBoxCursos";
             listBoxCursos.Size = new Size(706, 254);
             listBoxCursos.TabIndex = 0;
-            listBoxCursos.SelectedIndexChanged += listBoxCursos_SelectedIndexChanged;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(142, 22);
+            label2.Name = "label2";
+            label2.Size = new Size(398, 25);
+            label2.TabIndex = 5;
+            label2.Text = "Nombre --> Codigo --> Descripcion -->Cupo";
             // 
             // FrmGestionarCursos
             // 
@@ -98,6 +108,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDark;
             ClientSize = new Size(734, 450);
+            Controls.Add(label2);
             Controls.Add(buttonCancelar);
             Controls.Add(buttonEliminar);
             Controls.Add(buttonEditar);
@@ -110,6 +121,7 @@
             Text = "Gestionar Curso";
             Load += FrmGestionarCursos_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -120,5 +132,6 @@
         private Button buttonEliminar;
         private Button buttonCancelar;
         private ListBox listBoxCursos;
+        private Label label2;
     }
 }

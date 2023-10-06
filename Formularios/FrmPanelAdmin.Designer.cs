@@ -32,6 +32,7 @@
             buttonRegistrarEstudiante = new Button();
             buttonGestionarCursos = new Button();
             buttonCerrarSesion = new Button();
+            buttonMostrarEstudiantes = new Button();
             SuspendLayout();
             // 
             // label1
@@ -75,10 +76,22 @@
             buttonCerrarSesion.Location = new Point(208, 300);
             buttonCerrarSesion.Name = "buttonCerrarSesion";
             buttonCerrarSesion.Size = new Size(191, 54);
-            buttonCerrarSesion.TabIndex = 5;
+            buttonCerrarSesion.TabIndex = 4;
             buttonCerrarSesion.Text = "Cerrar Sesión";
             buttonCerrarSesion.UseVisualStyleBackColor = false;
             buttonCerrarSesion.Click += buttonCerrarSesion_Click;
+            // 
+            // buttonMostrarEstudiantes
+            // 
+            buttonMostrarEstudiantes.BackColor = Color.FromArgb(128, 128, 255);
+            buttonMostrarEstudiantes.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonMostrarEstudiantes.Location = new Point(82, 210);
+            buttonMostrarEstudiantes.Name = "buttonMostrarEstudiantes";
+            buttonMostrarEstudiantes.Size = new Size(191, 54);
+            buttonMostrarEstudiantes.TabIndex = 3;
+            buttonMostrarEstudiantes.Text = "Mostrar Estudiantes";
+            buttonMostrarEstudiantes.UseVisualStyleBackColor = false;
+            buttonMostrarEstudiantes.Click += buttonMostrarEstudiante_Click;
             // 
             // FrmPanelAdmin
             // 
@@ -86,6 +99,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDark;
             ClientSize = new Size(599, 415);
+            Controls.Add(buttonMostrarEstudiantes);
             Controls.Add(buttonCerrarSesion);
             Controls.Add(buttonGestionarCursos);
             Controls.Add(buttonRegistrarEstudiante);
@@ -93,7 +107,6 @@
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "FrmPanelAdmin";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Panel Administracion (admin)";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -105,5 +118,6 @@
         private Button buttonRegistrarEstudiante;
         private Button buttonGestionarCursos;
         private Button buttonCerrarSesion;
+        private Button buttonMostrarEstudiantes;
     }
 }

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "oBUvlPbw2JCxXITTfYPiKTEbv328z2JKkVCwhZOignoI37Auki9nR7itz16GixNU0+YIgaQBZKE6wAcwnKvdxA==",
+  "dgSpecHash": "9PSu3WjzOb5o3fJkosU9DCKmMYs7KYArLZexKszdi+zVdMVd6NzqXmZA+ESfDmHx+OV+VOqoj4rAp+o/Q8SqKw==",
   "success": false,
   "projectFilePath": "C:\\Users\\ICBC\\Desktop\\Facu\\Seg-Cuatri2023\\Progra-Labo-2\\SistemaSYSACAD\\SistemaSYSACAD.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ICBC\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512"
+  ],
   "logs": [
     {
       "code": "NU1201",

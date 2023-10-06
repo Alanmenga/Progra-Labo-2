@@ -4,16 +4,16 @@ namespace Biblioteca
 {
     public class Estudiante : Usuario
     {
-        private int legajo { get; set; }
-        private string nombre { get; set; }
-        private string apellido { get; set; }
-        private int dni { get; set; }
-        private string direccion { get; set; }
-        private int telefono { get; set; }
-        private string correoElectronico { get; set; }
-        private string contraseña{ get; set; }
-        private bool cambiarContraseña { get; set; }
-        private static int contadorEstudiantes = 1000;
+        public int legajo;
+        public string nombre;
+        public string apellido;
+        public int dni;
+        public string direccion;
+        public int telefono;
+        public string correoElectronico;
+        public string contraseña;
+        public bool cambiarContraseña;
+        public static int contadorEstudiantes = 1000;
         public static List<Estudiante> listaEstudiantes = new List<Estudiante>();
         public static List<Curso> cursosInscriptos = new List<Curso>()
         {

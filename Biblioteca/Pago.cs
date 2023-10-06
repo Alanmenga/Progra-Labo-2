@@ -49,8 +49,8 @@ namespace Biblioteca
 
         public static List<Pago> FiltrarPagosPorEstudiante(Estudiante estudianteBuscado)
         {
-            
-            return 
+
+            return listaPagos;
         }
     }
 }

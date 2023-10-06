@@ -33,21 +33,13 @@ namespace Formularios
 
             foreach (Curso curso in Curso.listaCursos)
             {
-                int tamanoEspacioNombre = anchoNombre - curso.nombre.Length;
-                string nombre = curso.nombre.PadRight(tamanoEspacioNombre);
-                int tamanoEspaciocodigo = anchoCodigo - curso.codigo.Length;
-                string codigo = curso.codigo.PadRight(tamanoEspaciocodigo);
-                int tamanoEspacioDescripcion = anchoDescripcion - curso.descripcion.Length;
-                string descripcion = curso.descripcion.PadRight(anchoDescripcion);
-                string cupo = curso.cupo.ToString().PadRight(anchoCupo);
+                string nombre = curso.nombre;;
+                string codigo = curso.codigo;
+                string descripcion = curso.descripcion;
+                string cupo = curso.cupo.ToString();
 
-                listBoxCursos.Items.Add($"'{nombre}'{codigo}'{descripcion}'{cupo}'");
+                listBoxCursos.Items.Add($"{nombre} --> {codigo} --> {descripcion} --> {cupo} ");
             }
-
-        }
-
-        private void listBoxCursos_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
         }
 
@@ -60,7 +52,9 @@ namespace Formularios
 
         private void buttonAgregar_Click(object sender, EventArgs e)
         {
-
+            FrmAgregarCurso frmAgregarCurso = new FrmAgregarCurso();
+            this.Close();
+            frmAgregarCurso.Show();
         }
     }
 }

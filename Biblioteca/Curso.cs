@@ -34,10 +34,7 @@ namespace Biblioteca
         public static void AgregarCurso(string nombre, string codigo, string descripcion, int cupo)
         {
             Curso cursoIngresado = new Curso(nombre, codigo, descripcion, cupo);
-            if(ValidarCurso(cursoIngresado)) 
-            {
-                listaCursos.Add(cursoIngresado);
-            }   
+            listaCursos.Add(cursoIngresado); 
         }
 
         public static bool EditarCurso(string nombre, string codigo, string descripcion, int cupo)
@@ -55,12 +52,6 @@ namespace Biblioteca
                 return false;
             }
         }
-
-        public static bool ValidarCurso(Curso cursoIngresado)
-        {
-            return listaCursos.Contains(cursoIngresado);
-        }
-
 
     }
 }
