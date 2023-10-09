@@ -35,6 +35,8 @@
             buttonIngresar = new Button();
             buttonLimpiar = new Button();
             labelTitulo = new Label();
+            buttonCompletarAdmin = new Button();
+            buttonCompletarEstudiante = new Button();
             SuspendLayout();
             // 
             // labelUsuario
@@ -108,12 +110,38 @@
             labelTitulo.TabIndex = 0;
             labelTitulo.Text = "SISTEMA NEW SYSACAD";
             // 
+            // buttonCompletarAdmin
+            // 
+            buttonCompletarAdmin.BackColor = Color.FromArgb(128, 128, 255);
+            buttonCompletarAdmin.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonCompletarAdmin.Location = new Point(208, 324);
+            buttonCompletarAdmin.Name = "buttonCompletarAdmin";
+            buttonCompletarAdmin.Size = new Size(112, 75);
+            buttonCompletarAdmin.TabIndex = 8;
+            buttonCompletarAdmin.Text = "Competar Admin";
+            buttonCompletarAdmin.UseVisualStyleBackColor = false;
+            buttonCompletarAdmin.Click += buttonCompletarAdmin_Click;
+            // 
+            // buttonCompletarEstudiante
+            // 
+            buttonCompletarEstudiante.BackColor = Color.FromArgb(128, 128, 255);
+            buttonCompletarEstudiante.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonCompletarEstudiante.Location = new Point(56, 324);
+            buttonCompletarEstudiante.Name = "buttonCompletarEstudiante";
+            buttonCompletarEstudiante.Size = new Size(112, 75);
+            buttonCompletarEstudiante.TabIndex = 7;
+            buttonCompletarEstudiante.Text = "Completar Estudiante";
+            buttonCompletarEstudiante.UseVisualStyleBackColor = false;
+            buttonCompletarEstudiante.Click += buttonCompletarEstudiante_Click;
+            // 
             // FrmLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDark;
-            ClientSize = new Size(425, 362);
+            ClientSize = new Size(425, 422);
+            Controls.Add(buttonCompletarAdmin);
+            Controls.Add(buttonCompletarEstudiante);
             Controls.Add(labelTitulo);
             Controls.Add(buttonLimpiar);
             Controls.Add(buttonIngresar);
@@ -126,6 +154,7 @@
             Name = "FrmLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
+            Load += FrmLogin_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -139,5 +168,7 @@
         private Button buttonIngresar;
         private Button buttonLimpiar;
         private Label labelTitulo;
+        private Button buttonCompletarAdmin;
+        private Button buttonCompletarEstudiante;
     }
 }

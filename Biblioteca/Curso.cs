@@ -15,13 +15,14 @@ namespace Biblioteca
         public  int cupo { get; set;  }
         public static List<Curso> listaCursos = new List<Curso>()
         {
-            new Curso("Programacion","ASD123","Programacion 3 Divicion E",200),
-            new Curso("Laboratorio","ASD124","Laboratorio 3 Divicion E",200),
-            new Curso("Estadistica","ASD125","Estadistica 3 Divicion E",200),
-            new Curso("Ingles","ASD126","Ingles 3 Divicion E",200),
-            new Curso("Contabilidad","ASD127","Contabilidad 3 Divicion E",200),
-            new Curso("Inv Operativa","ASD128","Investigacion Operativa 3 Divicion E",200),
+            new Curso("Programacion","ASD123","Programacion 3 Division E",200),
+            new Curso("Laboratorio","ASD124","Laboratorio 3 Division E",200),
+            new Curso("Estadistica","ASD125","Estadistica 3 Division E",200),
+            new Curso("Ingles","ASD126","Ingles 3 Division E",200),
+            new Curso("Contabilidad","ASD127","Contabilidad 3 Division E",200),
+            new Curso("Inv Operativa","ASD128","Investigacion Operativa 3 Division E",200),
         };
+
 
         public Curso(string nombre, string codigo, string descripcion, int cupo)
         {
@@ -37,20 +38,37 @@ namespace Biblioteca
             listaCursos.Add(cursoIngresado); 
         }
 
-        public static bool EditarCurso(string nombre, string codigo, string descripcion, int cupo)
+        public static bool EliminarCurso(string codigo)
         {
-            Curso cursoEditar = listaCursos.FirstOrDefault(curso => curso.codigo == codigo);
-            if(cursoEditar != null)
+            Curso cursoEliminar = listaCursos.FirstOrDefault(curso => curso.codigo == codigo);
+            if(cursoEliminar != null)
             {
-                cursoEditar.nombre = nombre;
-                cursoEditar.descripcion = descripcion;
-                cursoEditar.cupo = cupo;
+                listaCursos.Remove(cursoEliminar);
                 return true;
             }
-            else
-            {
-                return false;
-            }
+            return false;
+        }
+
+        public static void EditarCurso(string codigo, string nombreNuevo, string codigoNuevo, string descripcionNuevo, int cupoNuevo)
+        {
+            Curso cursoEditar = listaCursos.FirstOrDefault(curso => curso.codigo == codigo);
+            cursoEditar.nombre = nombreNuevo;
+            cursoEditar.descripcion = descripcionNuevo;
+            cursoEditar.codigo = codigoNuevo;
+            cursoEditar.cupo = cupoNuevo;
+        }
+        public static void EditarCurso(string codigo,string nombreNuevo, string descripcionNuevo, int cupoNuevo)
+        {
+            Curso cursoEditar = listaCursos.FirstOrDefault(curso => curso.codigo == codigo);
+            cursoEditar.nombre = nombreNuevo;
+            cursoEditar.descripcion = descripcionNuevo;
+            cursoEditar.cupo = cupoNuevo;
+        }
+
+        public static Curso RecuperarCursoConCodigo(string codigoBuscado)
+        {
+            Curso cursoEncontrado = listaCursos.FirstOrDefault(curso => curso.codigo == codigoBuscado);
+            return cursoEncontrado;
         }
 
     }

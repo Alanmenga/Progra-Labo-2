@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Biblioteca;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,9 +34,16 @@ namespace Formularios
 
         private void buttonGestionarCursos_Click(object sender, EventArgs e)
         {
-            FrmConsultarHorarios frmConsultarHorarios = new FrmConsultarHorarios();
-            this.Close();
-            frmConsultarHorarios.Show();
+            if(Estudiante.listaCursosInscriptos.Count == 0)
+            {
+                MessageBox.Show($"El alumno no esta anotado en ningun curso", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                FrmConsultarHorarios frmConsultarHorarios = new FrmConsultarHorarios();
+                this.Close();
+                frmConsultarHorarios.Show();
+            }
         }
 
         private void buttonMostrarEstudiantes_Click(object sender, EventArgs e)

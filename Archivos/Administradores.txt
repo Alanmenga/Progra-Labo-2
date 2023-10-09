@@ -1,0 +1,2 @@
+"admin1", "$2a$08$2MPNLN7pOlbrODlagxpMaOpAZ3FGsop61mrFwc/EgyHXeM4YfhlTC", Rol.administrador, "Ruben", "Miranda", "director", "ASD123"
+"admin2", "$2a$08$YlGeG8R9vJELLMO22UzoDeK/5lFb2D1M4EISSQlmTveloIDF4pehi", Rol.administrador, "Carlos", "Centirion", "profesor", "ASD124"

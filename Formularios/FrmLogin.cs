@@ -1,4 +1,6 @@
 using Biblioteca;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace Formularios
 {
@@ -9,13 +11,18 @@ namespace Formularios
             InitializeComponent();
         }
 
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+            Administrador.RecuperarAdministrador();
+            Estudiante.RecuperarEstudiantes();
+        }
 
         private void buttonIngresar_Click(object sender, EventArgs e)
         {
             bool usuarioValido = Usuario.UsuarioExiste(textBoxUsuario.Text, textBoxContraseña.Text);
             if (usuarioValido)
             {
-                if(Usuario.ObtenerRolUsuario(textBoxUsuario.Text) == Rol.administrador)
+                if (Usuario.ObtenerRolUsuario(textBoxUsuario.Text) == Rol.administrador)
                 {
                     //new Sesion(textBoxUsuario.Text, DateTime.Now);
                     FrmPanelAdmin frmPanelAdmin = new FrmPanelAdmin();
@@ -45,5 +52,27 @@ namespace Formularios
             textBoxUsuario.Clear();
             textBoxContraseña.Clear();
         }
+
+        private void buttonCompletarEstudiante_Click(object sender, EventArgs e)
+        {
+            textBoxUsuario.Text = "juanr";
+            textBoxContraseña.Text = "prueba01";
+        }
+
+        private void buttonCompletarAdmin_Click(object sender, EventArgs e)
+        {
+            textBoxUsuario.Text = "admin1";
+            textBoxContraseña.Text = "prueba01";
+        }
+
+
+        private void RecuperarAdministradores(string data)
+        {
+            List<Administrador> administradores = new List<Administrador>();
+        }
+        
+
+
+
     }
 }

@@ -1,0 +1,3 @@
+"juanr", "$2a$08$2MPNLN7pOlbrODlagxpMaOpAZ3FGsop61mrFwc/EgyHXeM4YfhlTC", Rol.estudiante, "Juan","Mengoni",39669992,"calle falsa 123",1140432123,"JuanM@gmail.com",true
+"ana", "$2a$08$2MPNLN7pOlbrODlagxpMaOpAZ3FGsop61mrFwc/EgyHXeM4YfhlTC", Rol.estudiante, "Ana", "Gomez", 87654321, "Calle 456",42948358,"anagomez@gmail.com",false
+"carlos", "$2a$08$2MPNLN7pOlbrODlagxpMaOpAZ3FGsop61mrFwc/EgyHXeM4YfhlTC", Rol.estudiante, "Carlos", "Rodriguez", 78901234, "Calle 789",49285432,"carlos.r@gmail.com",false
