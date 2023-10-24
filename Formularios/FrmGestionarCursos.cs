@@ -83,12 +83,6 @@ namespace Formularios
 
         private void MostrarCursos()
         {
-            // Definir el ancho de cada columna
-            int anchoNombre = 35;
-            int anchoCodigo = 15;
-            int anchoDescripcion = 40;
-            int anchoCupo = 10;
-
             foreach (Curso curso in Curso.listaCursos)
             {
                 string nombre = curso.nombre; ;

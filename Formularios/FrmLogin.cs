@@ -13,8 +13,11 @@ namespace Formularios
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-            Administrador.RecuperarAdministrador();
-            Estudiante.RecuperarEstudiantes();
+            Estudiante.RecuperarEstudiantesDeArchivo();
+            Estudiante.AgregarEstudiantesRecuperados();
+
+            Administrador.RecuperarAdministradorDeArchivos();
+            //Curso.RecuperarCursos();
         }
 
         private void buttonIngresar_Click(object sender, EventArgs e)

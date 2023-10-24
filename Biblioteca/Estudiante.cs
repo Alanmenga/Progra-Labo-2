@@ -1,4 +1,5 @@
-﻿using System.Net.NetworkInformation;
+﻿using System.IO;
+using System.Net.NetworkInformation;
 
 namespace Biblioteca
 {
@@ -14,17 +15,8 @@ namespace Biblioteca
         public bool cambiarContraseña;
         public static int contadorEstudiantes = 1000;
         public static List<Estudiante> listaEstudiantes = new List<Estudiante>();
+        public static List<Estudiante> listaEstudiantesRecuperados = new List<Estudiante>();
         public static List<Curso> listaCursosInscriptos = new List<Curso>();
-        //{
-        //    new Curso("Algebra","ASD123","Programacion 3 Divicion E",200),
-        //    new Curso("Quimica","ASD124","Laboratorio 3 Divicion E",200),
-        //    new Curso("Materiales Metalicos","ASD125","Estadistica 3 Divicion E",200),
-        //    new Curso("Ingles","ASD126","Ingles 3 Divicion E",200),
-        //    new Curso("Empresarial","ASD127","Contabilidad 3 Divicion E",200),
-        //    new Curso("Legislacion","ASD128","Investigacion Operativa 3 Divicion E",200),
-        //};
-
-
 
         public Estudiante(string usuario,
                           string contraseña,
@@ -50,21 +42,12 @@ namespace Biblioteca
         }
 
 
-
-        public static void AgregarEstudiante(string usuario,
-                          string nombre,
-                          string apellido,
-                          Rol rol,
-                          int dni,
-                          string direccion,
-                          int telefono,
-                          string correoElectronico,
-                          string contraseña,
-                          bool cambiarContraseña)
+        public static void AgregarEstudiante(Estudiante estudiante)
         {
-            Estudiante estudianteNuevo = new Estudiante(usuario, contraseña, rol, nombre, apellido, dni, direccion, telefono, correoElectronico, cambiarContraseña);
-            AgregarUsuario(estudianteNuevo);
-            listaEstudiantes.Add(estudianteNuevo);
+            //Estudiante estudianteNuevo = new Estudiante(estudiante.usuario, estudiante.contraseña, estudiante.rol, estudiante.nombre, estudiante.apellido, estudiante.dni, estudiante.direccion, estudiante.telefono, estudiante.correoElectronico, estudiante.cambiarContraseña);
+            AgregarEstudianteArchivo(estudiante);
+            AgregarUsuario(estudiante);
+            listaEstudiantes.Add(estudiante);
         }
 
         public Estudiante RecuperarEstudianteConUsuario(string usuarioBuscado)
@@ -87,7 +70,7 @@ namespace Biblioteca
             }
         }
 
-        public static void RecuperarEstudiantes()
+        public static void RecuperarEstudiantesDeArchivo()
         {
             string rutaArchivo = @"C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Archivos\Estudiantes.txt";
 
@@ -108,19 +91,8 @@ namespace Biblioteca
                                 partes[i] = partes[i].Trim(' ', '"');
                             }
 
-                            AgregarEstudiante
-                            (
-                                partes[0],
-                                partes[3],
-                                partes[4],
-                                ConversorStringARol(partes[2]),
-                                int.Parse(partes[5]),
-                                partes[6],
-                                int.Parse(partes[7]),
-                                partes[8],
-                                partes[1],
-                                ConversorStringABool(partes[9])
-                            );
+                            Estudiante estudianteNuevo = new Estudiante(partes[0], partes[1], ConversorStringARol(partes[2]), partes[3], partes[4], int.Parse(partes[5]), partes[6], int.Parse(partes[7]), partes[8], ConversorStringABool(partes[9]));
+                            listaEstudiantesRecuperados.Add(estudianteNuevo);
                         }
                     }
                 }
@@ -129,6 +101,65 @@ namespace Biblioteca
             {
                 Console.WriteLine($"No se pudo recuperar los estudiantes: {ex.Message}");
             }
+        }
+
+        public static void AgregarEstudiantesRecuperados()
+        {
+            foreach (Estudiante estudiante in listaEstudiantesRecuperados)
+            {
+                AgregarUsuario(estudiante);
+                listaEstudiantes.Add(estudiante);           
+            }
+        }
+
+        public static void AgregarEstudianteArchivo(Estudiante estudiante)
+        {
+            Hash hash = new Hash();
+            var contraseñaHasheada = hash.GetHash(estudiante.contraseña);
+
+            string contenido = $"{estudiante.usuario}, {contraseñaHasheada}, {estudiante.rol}, {estudiante.nombre}, {estudiante.apellido}, {estudiante.dni}, {estudiante.direccion}, {estudiante.telefono}, {estudiante.correoElectronico}, {estudiante.cambiarContraseña} ";
+            string rutaArchivo = @"C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Archivos\Estudiantes.txt";
+
+            try
+            {
+                // Verifica si el archivo ya existe
+                if (File.Exists(rutaArchivo))
+                {
+                    // Si el archivo existe, guarda el contenido en él
+                    File.AppendAllText(rutaArchivo, "\n");
+                    File.AppendAllText(rutaArchivo, contenido);
+                }
+                else
+                {
+                    // Si el archivo no existe, crea uno nuevo y guarda el contenido en él
+                    File.WriteAllText(rutaArchivo, contenido);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"No se pudo recuperar los estudiantes: {ex.Message}");
+            }
+        }
+
+        public static void EliminarListas()
+        {
+            listaEstudiantes.Clear();
+            listaEstudiantesRecuperados.Clear();
+            listaEstudiantesRecuperados.Clear();
+        }
+
+
+        public static bool ValidacionEstudianteDuplicado(int legajo)
+        {
+            bool estaRegistrado = false;
+            foreach (Estudiante estudiante in listaEstudiantes)
+            {
+                if(estudiante.legajo == legajo)
+                {
+                    estaRegistrado = true;
+                }
+            }
+            return estaRegistrado;
         }
 
     }

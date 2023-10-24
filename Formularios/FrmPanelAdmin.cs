@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Biblioteca;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,6 +27,7 @@ namespace Formularios
 
         private void buttonCerrarSesion_Click(object sender, EventArgs e)
         {
+            Estudiante.EliminarListas();
             FrmLogin frmLogin = new FrmLogin();
             this.Close();
             frmLogin.Show();

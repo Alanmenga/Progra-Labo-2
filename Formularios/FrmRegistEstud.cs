@@ -123,18 +123,8 @@ namespace Formularios
             Hash hash = new Hash();
             string contraseñaHasheada = hash.GetHash(textBoxContraseña.Text);
 
-            Estudiante.AgregarEstudiante(
-                textBoxUsuario.Text,
-                textBoxNombre.Text,
-                textBoxApellido.Text,
-                Rol.estudiante,
-                int.Parse(textBoxDni.Text),
-                textBoxDireccion.Text,
-                int.Parse(textBoxTelefono.Text),
-                textBoxCorreo.Text,
-                contraseñaHasheada,
-                checkBoxCambiarContra.Checked
-            );
+            Estudiante nuevoEstudiante = new Estudiante(textBoxNombre.Text,textBoxApellido.Text,Rol.estudiante,textBoxNombre.Text,textBoxApellido.Text,int.Parse(textBoxDni.Text),textBoxDireccion.Text,int.Parse(textBoxTelefono.Text),textBoxCorreo.Text,checkBoxCambiarContra.Checked);
+            Estudiante.AgregarEstudiante(nuevoEstudiante);
 
             //mail.SendEmail(textBoxCorreo.Text, "HOLA HOLA HOLA", "ESTO FUNCIONARÁ??????");
             this.abrirPanel();

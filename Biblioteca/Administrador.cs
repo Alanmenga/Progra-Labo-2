@@ -24,6 +24,7 @@ namespace Biblioteca
             this.matricula = matricula;  
         }
 
+        //Este metodo deberia recibir un administrador como parametro de entrada
         public static void AgregarAdministrador(string usuario, string contraseña, Rol rol, string nombre, string apellido, string cargo, string matricula)
         {
             Administrador administradorNuevo = new Administrador(usuario, contraseña, rol, nombre, apellido, cargo, matricula);
@@ -36,7 +37,7 @@ namespace Biblioteca
             return listaAdministradores;
         }
 
-        public static void RecuperarAdministrador()
+        public static void RecuperarAdministradorDeArchivos()
         {
             string rutaArchivo = @"C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Archivos\Administradores.txt";
 
