@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using System.Net.NetworkInformation;
+using System.Runtime.CompilerServices;
 
 namespace Biblioteca
 {
@@ -36,7 +37,30 @@ namespace Biblioteca
             this.direccion = direccion;
             this.telefono = telefono;
             this.correoElectronico = correoElectronico;
-            //this.contraseña = contraseña;
+            this.legajo = ++contadorEstudiantes;
+            this.cambiarContraseña = cambiarContraseña;
+        }
+
+        public Estudiante(int legajo,
+                          string usuario,
+                          string contraseña,
+                          Rol rol,
+                          string nombre,
+                          string apellido,
+                          int dni,
+                          string direccion,
+                          int telefono,
+                          string correoElectronico,
+                          bool cambiarContraseña)
+            : base(usuario, contraseña, rol)
+        {
+            this.legajo = legajo;
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.dni = dni;
+            this.direccion = direccion;
+            this.telefono = telefono;
+            this.correoElectronico = correoElectronico;
             this.legajo = ++contadorEstudiantes;
             this.cambiarContraseña = cambiarContraseña;
         }
@@ -44,10 +68,18 @@ namespace Biblioteca
 
         public static void AgregarEstudiante(Estudiante estudiante)
         {
-            //Estudiante estudianteNuevo = new Estudiante(estudiante.usuario, estudiante.contraseña, estudiante.rol, estudiante.nombre, estudiante.apellido, estudiante.dni, estudiante.direccion, estudiante.telefono, estudiante.correoElectronico, estudiante.cambiarContraseña);
             AgregarEstudianteArchivo(estudiante);
             AgregarUsuario(estudiante);
             listaEstudiantes.Add(estudiante);
+        }
+
+        public static void AgregarEstudiantesRecuperados()
+        {
+            foreach (Estudiante estudiante in listaEstudiantesRecuperados)
+            {
+                AgregarUsuario(estudiante);
+                listaEstudiantes.Add(estudiante);
+            }
         }
 
         public Estudiante RecuperarEstudianteConUsuario(string usuarioBuscado)
@@ -83,7 +115,7 @@ namespace Biblioteca
                         // Dividir la línea en partes usando comas como separadores
                         string[] partes = linea.Split(',');
 
-                        if (partes.Length == 10)
+                        if (partes.Length == 11)
                         {
                             // Eliminar comillas y espacios en blanco de cada parte
                             for (int i = 0; i < partes.Length; i++)
@@ -91,7 +123,7 @@ namespace Biblioteca
                                 partes[i] = partes[i].Trim(' ', '"');
                             }
 
-                            Estudiante estudianteNuevo = new Estudiante(partes[0], partes[1], ConversorStringARol(partes[2]), partes[3], partes[4], int.Parse(partes[5]), partes[6], int.Parse(partes[7]), partes[8], ConversorStringABool(partes[9]));
+                            Estudiante estudianteNuevo = new Estudiante(int.Parse(partes[0]), partes[1], partes[2], ConversorStringARol(partes[3]), partes[4], partes[5], int.Parse(partes[6]), partes[7], int.Parse(partes[8]), partes[9], ConversorStringABool(partes[10]));
                             listaEstudiantesRecuperados.Add(estudianteNuevo);
                         }
                     }
@@ -103,21 +135,14 @@ namespace Biblioteca
             }
         }
 
-        public static void AgregarEstudiantesRecuperados()
-        {
-            foreach (Estudiante estudiante in listaEstudiantesRecuperados)
-            {
-                AgregarUsuario(estudiante);
-                listaEstudiantes.Add(estudiante);           
-            }
-        }
+
 
         public static void AgregarEstudianteArchivo(Estudiante estudiante)
         {
             Hash hash = new Hash();
             var contraseñaHasheada = hash.GetHash(estudiante.contraseña);
 
-            string contenido = $"{estudiante.usuario}, {contraseñaHasheada}, {estudiante.rol}, {estudiante.nombre}, {estudiante.apellido}, {estudiante.dni}, {estudiante.direccion}, {estudiante.telefono}, {estudiante.correoElectronico}, {estudiante.cambiarContraseña} ";
+            string contenido = $"{estudiante.legajo}, {estudiante.usuario}, {contraseñaHasheada}, {estudiante.rol}, {estudiante.nombre}, {estudiante.apellido}, {estudiante.dni}, {estudiante.direccion}, {estudiante.telefono}, {estudiante.correoElectronico}, {estudiante.cambiarContraseña} ";
             string rutaArchivo = @"C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Archivos\Estudiantes.txt";
 
             try
@@ -143,6 +168,7 @@ namespace Biblioteca
 
         public static void EliminarListas()
         {
+            contadorEstudiantes = 1000;
             listaEstudiantes.Clear();
             listaEstudiantesRecuperados.Clear();
             listaEstudiantesRecuperados.Clear();

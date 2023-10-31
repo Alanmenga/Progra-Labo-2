@@ -16,3 +16,6 @@ C:\Users\ICBC\Desktop\Facu\Seg-Cuatri 2023\Progra-Labo-2\SistemaSYSACAD\obj\Debu
 C:\Users\ICBC\Desktop\Facu\Seg-Cuatri 2023\Progra-Labo-2\SistemaSYSACAD\obj\Debug\net6.0\SistemaSYSACAD.pdb
 C:\Users\ICBC\Desktop\Facu\Seg-Cuatri 2023\Progra-Labo-2\SistemaSYSACAD\obj\Debug\net6.0\SistemaSYSACAD.genruntimeconfig.cache
 C:\Users\ICBC\Desktop\Facu\Seg-Cuatri 2023\Progra-Labo-2\SistemaSYSACAD\obj\Debug\net6.0\ref\SistemaSYSACAD.dll
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\SistemaSYSACAD\obj\Debug\net6.0\SistemaSYSACAD.dll
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\SistemaSYSACAD\obj\Debug\net6.0\refint\SistemaSYSACAD.dll
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\SistemaSYSACAD\obj\Debug\net6.0\SistemaSYSACAD.pdb

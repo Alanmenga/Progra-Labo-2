@@ -31,6 +31,7 @@ namespace Formularios
                 string apellido = estudiante.apellido;
                 string usuario = estudiante.usuario;
                 int legajo = estudiante.legajo;
+                //MessageBox.Show($"nombre: {nombre}, \n apellido: {apellido}, \n usuario: {usuario}, \n legajo: {legajo}");
 
                 listBoxEstudiantes.Items.Add($"--->{legajo}--->{nombre}--->{apellido}--->{usuario}--->");
             }
