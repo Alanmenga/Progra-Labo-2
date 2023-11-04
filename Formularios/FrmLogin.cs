@@ -16,7 +16,8 @@ namespace Formularios
             Estudiante.RecuperarEstudiantesDeArchivo();
             Estudiante.AgregarEstudiantesRecuperados();
 
-            Administrador.RecuperarAdministradorDeArchivos();
+            Administrador.RecuperarAdministradorDeArchivosJson();
+            Administrador.AgregarAdministradoresRecuperados();
             //Curso.RecuperarCursos();
         }
 

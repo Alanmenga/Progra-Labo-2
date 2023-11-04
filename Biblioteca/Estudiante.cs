@@ -171,7 +171,6 @@ namespace Biblioteca
             contadorEstudiantes = 1000;
             listaEstudiantes.Clear();
             listaEstudiantesRecuperados.Clear();
-            listaEstudiantesRecuperados.Clear();
         }
 
 

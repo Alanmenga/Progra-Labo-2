@@ -1,0 +1,20 @@
+[
+    {
+        "usuario": "admin1",
+        "contraseña": "$2a$08$2MPNLN7pOlbrODlagxpMaOpAZ3FGsop61mrFwc/EgyHXeM4YfhlTC",
+        "rol": "Rol.administrador",
+        "nombre": "Ruben",
+        "apellido": "Miranda",
+        "profesion": "director",
+        "matricula": "ASD123"
+    },
+    {
+        "usuario": "admin2",
+        "contraseña": "$2a$08$YlGeG8R9vJELLMO22UzoDeK/5lFb2D1M4EISSQlmTveloIDF4pehi",
+        "rol": "Rol.administrador",
+        "nombre": "Carlos",
+        "apellido": "Miranda",
+        "profesion": "profesor",
+        "matricula": "ASD124"
+    }
+]

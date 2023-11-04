@@ -36,7 +36,7 @@
             // 
             buttonCancelar.BackColor = Color.FromArgb(128, 128, 255);
             buttonCancelar.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonCancelar.Location = new Point(554, 358);
+            buttonCancelar.Location = new Point(344, 336);
             buttonCancelar.Name = "buttonCancelar";
             buttonCancelar.Size = new Size(98, 49);
             buttonCancelar.TabIndex = 9;
@@ -59,7 +59,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDark;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(806, 432);
             Controls.Add(buttonCancelar);
             Controls.Add(listBoxEstudiantes);
             Name = "FrmMostrarEstudiantes";
@@ -76,5 +76,6 @@
         private Button buttonEditar;
         private Button buttonAgregar;
         private ListBox listBoxEstudiantes;
+        private DataGridView dataGridViewEstudiantes;
     }
 }
