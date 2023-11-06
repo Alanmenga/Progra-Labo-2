@@ -37,6 +37,7 @@
             labelTitulo = new Label();
             buttonCompletarAdmin = new Button();
             buttonCompletarEstudiante = new Button();
+            buttonProfesor = new Button();
             SuspendLayout();
             // 
             // labelUsuario
@@ -114,11 +115,11 @@
             // 
             buttonCompletarAdmin.BackColor = Color.FromArgb(128, 128, 255);
             buttonCompletarAdmin.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonCompletarAdmin.Location = new Point(208, 324);
+            buttonCompletarAdmin.Location = new Point(155, 323);
             buttonCompletarAdmin.Name = "buttonCompletarAdmin";
-            buttonCompletarAdmin.Size = new Size(112, 75);
+            buttonCompletarAdmin.Size = new Size(112, 46);
             buttonCompletarAdmin.TabIndex = 8;
-            buttonCompletarAdmin.Text = "Competar Admin";
+            buttonCompletarAdmin.Text = "Admin";
             buttonCompletarAdmin.UseVisualStyleBackColor = false;
             buttonCompletarAdmin.Click += buttonCompletarAdmin_Click;
             // 
@@ -126,20 +127,33 @@
             // 
             buttonCompletarEstudiante.BackColor = Color.FromArgb(128, 128, 255);
             buttonCompletarEstudiante.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonCompletarEstudiante.Location = new Point(56, 324);
+            buttonCompletarEstudiante.Location = new Point(22, 323);
             buttonCompletarEstudiante.Name = "buttonCompletarEstudiante";
-            buttonCompletarEstudiante.Size = new Size(112, 75);
+            buttonCompletarEstudiante.Size = new Size(112, 46);
             buttonCompletarEstudiante.TabIndex = 7;
-            buttonCompletarEstudiante.Text = "Completar Estudiante";
+            buttonCompletarEstudiante.Text = "Estudiante";
             buttonCompletarEstudiante.UseVisualStyleBackColor = false;
             buttonCompletarEstudiante.Click += buttonCompletarEstudiante_Click;
+            // 
+            // buttonProfesor
+            // 
+            buttonProfesor.BackColor = Color.FromArgb(128, 128, 255);
+            buttonProfesor.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonProfesor.Location = new Point(289, 323);
+            buttonProfesor.Name = "buttonProfesor";
+            buttonProfesor.Size = new Size(112, 46);
+            buttonProfesor.TabIndex = 9;
+            buttonProfesor.Text = "Profesor";
+            buttonProfesor.UseVisualStyleBackColor = false;
+            buttonProfesor.Click += buttonProfesor_Click;
             // 
             // FrmLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDark;
-            ClientSize = new Size(425, 422);
+            ClientSize = new Size(419, 422);
+            Controls.Add(buttonProfesor);
             Controls.Add(buttonCompletarAdmin);
             Controls.Add(buttonCompletarEstudiante);
             Controls.Add(labelTitulo);
@@ -170,5 +184,6 @@
         private Label labelTitulo;
         private Button buttonCompletarAdmin;
         private Button buttonCompletarEstudiante;
+        private Button buttonProfesor;
     }
 }

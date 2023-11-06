@@ -11,23 +11,21 @@ namespace Biblioteca
     {
         public string nombre;
         public string apellido;
-        public string materia;
         public string matricula;
         public static List<Profesor> listaProfesores = new List<Profesor>();
         public static List<Profesor> listaProfesoresRecuperados = new List<Profesor>();
 
-        public Profesor(string usuario, string contraseña, Rol rol, string nombre, string apellido, string materia, string matricula)
+        public Profesor(string usuario, string contraseña, Rol rol, string nombre, string apellido, string matricula)
             : base(usuario, contraseña, rol)
         {
             this.nombre = nombre;
             this.apellido = apellido;
-            this.materia = materia;
             this.matricula = matricula;
         }
 
         public static void AgregarProfesor(Profesor profesor)
         {
-            Profesor profesorNuevo = new Profesor(profesor.usuario, profesor.contraseña, profesor.rol, profesor.nombre, profesor.apellido, profesor.materia, profesor.matricula);
+            Profesor profesorNuevo = new Profesor(profesor.usuario, profesor.contraseña, profesor.rol, profesor.nombre, profesor.apellido, profesor.matricula);
             AgregarUsuario(profesorNuevo);
             listaProfesores.Add(profesorNuevo);
         }
@@ -54,7 +52,7 @@ namespace Biblioteca
                         // Dividir la línea en partes usando comas como separadores
                         string[] partes = linea.Split(',');
 
-                        if (partes.Length == 7)
+                        if (partes.Length == 6)
                         {
                             // Eliminar comillas y espacios en blanco de cada parte
                             for (int i = 0; i < partes.Length; i++)
@@ -62,7 +60,7 @@ namespace Biblioteca
                                 partes[i] = partes[i].Trim(' ', '"');
                             }
 
-                            Profesor profesorNuevo = new Profesor(partes[0], partes[1], ConversorStringARol(partes[2]), partes[3], partes[4], partes[5], partes[6]);
+                            Profesor profesorNuevo = new Profesor(partes[0], partes[1], ConversorStringARol(partes[2]), partes[3], partes[4], partes[5]);
                             listaProfesoresRecuperados.Add(profesorNuevo);
                         }
                     }
@@ -79,7 +77,7 @@ namespace Biblioteca
             Hash hash = new Hash();
             var contraseñaHasheada = hash.GetHash(profesor.contraseña);
 
-            string contenido = $"{profesor.usuario}, {contraseñaHasheada}, {profesor.rol}, {profesor.nombre}, {profesor.apellido}, {profesor.materia}, {profesor.matricula}";
+            string contenido = $"{profesor.usuario}, {contraseñaHasheada}, {profesor.rol}, {profesor.nombre}, {profesor.apellido}, {profesor.matricula}";
             string rutaArchivo = @"C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Archivos\Profesores.txt";
 
             try
@@ -115,7 +113,7 @@ namespace Biblioteca
                     var data = JsonSerializer.Deserialize<List<ProfesorI>>(json);
                     foreach (ProfesorI administrador in data)
                     {
-                        Profesor profesorNuevo = new Profesor(administrador.usuario, administrador.contraseña, ConversorStringARol(administrador.rol.ToString()), administrador.nombre, administrador.apellido, administrador.cargo, administrador.matricula);
+                        Profesor profesorNuevo = new Profesor(administrador.usuario, administrador.contraseña, ConversorStringARol(administrador.rol.ToString()), administrador.nombre, administrador.apellido, administrador.matricula);
                         listaProfesoresRecuperados.Add(profesorNuevo);
                     }
                 }
@@ -133,7 +131,6 @@ namespace Biblioteca
             public string rol { get; set; }
             public string nombre { get; set; }
             public string apellido { get; set; }
-            public string materia { get; set; }
             public string matricula { get; set; }
         }
 

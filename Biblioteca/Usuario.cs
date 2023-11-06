@@ -34,6 +34,10 @@ namespace Biblioteca
         {
             listaUsuarios.Add(administrador);
         }
+        public static void AgregarUsuario(Profesor profesor)
+        {
+            listaUsuarios.Add(profesor);
+        }
 
         public static List<Usuario> ObtenerUsuarios()
         {
@@ -57,6 +61,10 @@ namespace Biblioteca
             if (rolRecuperado == "Rol.administrador")
             {
                 return Rol.administrador;
+            }
+            else if (rolRecuperado == "Rol.profesor")
+            {
+                return Rol.profesor;
             }
             else
             {

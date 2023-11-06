@@ -55,3 +55,4 @@ C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\bin\Debug\ne
 C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.FrmMostrarEstudiantes.resources
 C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.FrmAgregarCurso.resources
 C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.FrmEditarCurso.resources
+C:\Users\ICBC\Desktop\Facu\Seg-Cuatri2023\Progra-Labo-2\Formularios\obj\Debug\net6.0-windows\Formularios.FrmPanelProfe.resources

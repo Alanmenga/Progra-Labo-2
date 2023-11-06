@@ -162,6 +162,7 @@
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "FrmPanelAdmin";
             StartPosition = FormStartPosition.CenterScreen;
+            Text = "Panel Administracion (admin)";
             ResumeLayout(false);
             PerformLayout();
         }

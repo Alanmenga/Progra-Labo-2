@@ -1,40 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="FormPanelProfe.cs">
+    <Compile Update="Paneles\FormPanelProfe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmAgregarCurso.cs">
+    <Compile Update="Admin\GestionCursos\FrmAgregarCurso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmConsultarHorarios.cs">
+    <Compile Update="Estudiante\FrmConsultarHorarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmEditarCurso.cs">
+    <Compile Update="Admin\GestionCursos\FrmEditarCurso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmGestionarCursos.cs">
+    <Compile Update="Admin\GestionCursos\FrmGestionarCursos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmInscCurso.cs">
+    <Compile Update="Estudiante\FrmInscCurso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmMostrarEstudiantes.cs">
+    <Compile Update="Admin\FrmMostrarEstudiantes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmPanelEstud.cs">
+    <Compile Update="Paneles\FrmPanelEstud.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmRealizarPagos.cs">
+    <Compile Update="Estudiante\FrmRealizarPagos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmRegistEstud.cs">
+    <Compile Update="Admin\FrmRegistEstud.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmPanelAdmin.cs">
+    <Compile Update="Paneles\FrmPanelAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

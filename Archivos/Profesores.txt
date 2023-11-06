@@ -1,0 +1,2 @@
+"profe1", "$2a$08$2MPNLN7pOlbrODlagxpMaOpAZ3FGsop61mrFwc/EgyHXeM4YfhlTC", Rol.profesor, "Ruben", "Miranda", "ASD123"
+"profe2", "$2a$08$YlGeG8R9vJELLMO22UzoDeK/5lFb2D1M4EISSQlmTveloIDF4pehi", Rol.profesor, "Carlos", "Centirion", "ASD124"

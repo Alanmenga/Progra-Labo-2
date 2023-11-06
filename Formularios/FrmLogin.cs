@@ -18,6 +18,9 @@ namespace Formularios
 
             Administrador.RecuperarAdministradorDeArchivosJson();
             Administrador.AgregarAdministradoresRecuperados();
+
+            Profesor.RecuperarProfesorDeArchivos();
+            Profesor.AgregarProfesoresRecuperados();
             //Curso.RecuperarCursos();
         }
 
@@ -28,18 +31,21 @@ namespace Formularios
             {
                 if (Usuario.ObtenerRolUsuario(textBoxUsuario.Text) == Rol.administrador)
                 {
-                    //new Sesion(textBoxUsuario.Text, DateTime.Now);
                     FrmPanelAdmin frmPanelAdmin = new FrmPanelAdmin();
                     this.Hide();
                     frmPanelAdmin.Show();
-                    //MessageBox.Show("EL usuario es administrador");
+                }
+                else if (Usuario.ObtenerRolUsuario(textBoxUsuario.Text) == Rol.profesor)
+                {
+                    FrmPanelProfe formPanelProfe = new FrmPanelProfe();
+                    this.Hide();
+                    formPanelProfe.Show();
                 }
                 else
                 {
                     FrmPanelEstud frmPanelEstud = new FrmPanelEstud();
                     this.Hide();
                     frmPanelEstud.Show();
-                    //MessageBox.Show("EL usuario es alumno");
                 }
 
             }
@@ -69,13 +75,17 @@ namespace Formularios
             textBoxContraseña.Text = "prueba01";
         }
 
+        private void buttonProfesor_Click(object sender, EventArgs e)
+        {
+            textBoxUsuario.Text = "profe1";
+            textBoxContraseña.Text = "prueba01";
+        }
+
 
         private void RecuperarAdministradores(string data)
         {
             List<Administrador> administradores = new List<Administrador>();
         }
-        
-
 
 
     }

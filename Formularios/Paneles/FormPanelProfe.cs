@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace Formularios
 {
-    public partial class FormPanelProfe : Form
+    public partial class FrmPanelProfe : Form
     {
-        public FormPanelProfe()
+        public FrmPanelProfe()
         {
             InitializeComponent();
+        }
+
+        private void buttonCerrarSesion_Click(object sender, EventArgs e)
+        {
+            FrmLogin frmLogin = new FrmLogin();
+            this.Close();
+            frmLogin.Show();
         }
     }
 }
