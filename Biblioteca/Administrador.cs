@@ -26,7 +26,6 @@ namespace Biblioteca
             this.matricula = matricula;  
         }
 
-        //Este metodo deberia recibir un administrador como parametro de entrada
         public static void AgregarAdministrador(Administrador administrador)
         {
             Administrador administradorNuevo = new Administrador(administrador.usuario, administrador.contraseña, administrador.rol, administrador.nombre, administrador.apellido, administrador.cargo, administrador.matricula);

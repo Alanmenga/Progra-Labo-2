@@ -162,11 +162,11 @@ namespace Biblioteca
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"No se pudo recuperar los estudiantes: {ex.Message}");
+                Console.WriteLine($"No se pudo agregar los estudiantes: {ex.Message}");
             }
         }
 
-        public static void EliminarListas()
+        public static void EliminarListasEstudiantes()
         {
             contadorEstudiantes = 1000;
             listaEstudiantes.Clear();

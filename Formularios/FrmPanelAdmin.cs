@@ -27,7 +27,7 @@ namespace Formularios
 
         private void buttonCerrarSesion_Click(object sender, EventArgs e)
         {
-            Estudiante.EliminarListas();
+            Estudiante.EliminarListasEstudiantes();
             FrmLogin frmLogin = new FrmLogin();
             this.Close();
             frmLogin.Show();
@@ -45,6 +45,21 @@ namespace Formularios
             FrmMostrarEstudiantes frmMostrarEstudiantes = new FrmMostrarEstudiantes();
             this.Close();
             frmMostrarEstudiantes.Show();
+        }
+
+        private void buttonGenerarReportes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonGestionarRequisitos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonManejarEspera_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

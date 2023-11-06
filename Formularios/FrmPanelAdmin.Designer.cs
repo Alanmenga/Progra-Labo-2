@@ -33,6 +33,10 @@
             buttonGestionarCursos = new Button();
             buttonCerrarSesion = new Button();
             buttonMostrarEstudiantes = new Button();
+            buttonGenerarReportes = new Button();
+            buttonManejarEspera = new Button();
+            buttonGestionarRequisitos = new Button();
+            buttonGestionarProfesores = new Button();
             SuspendLayout();
             // 
             // label1
@@ -73,7 +77,7 @@
             // 
             buttonCerrarSesion.BackColor = Color.FromArgb(128, 128, 255);
             buttonCerrarSesion.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            buttonCerrarSesion.Location = new Point(208, 300);
+            buttonCerrarSesion.Location = new Point(197, 473);
             buttonCerrarSesion.Name = "buttonCerrarSesion";
             buttonCerrarSesion.Size = new Size(191, 54);
             buttonCerrarSesion.TabIndex = 4;
@@ -93,12 +97,63 @@
             buttonMostrarEstudiantes.UseVisualStyleBackColor = false;
             buttonMostrarEstudiantes.Click += buttonMostrarEstudiante_Click;
             // 
+            // buttonGenerarReportes
+            // 
+            buttonGenerarReportes.BackColor = Color.FromArgb(128, 128, 255);
+            buttonGenerarReportes.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonGenerarReportes.Location = new Point(322, 210);
+            buttonGenerarReportes.Name = "buttonGenerarReportes";
+            buttonGenerarReportes.Size = new Size(191, 54);
+            buttonGenerarReportes.TabIndex = 5;
+            buttonGenerarReportes.Text = "Generar Reportes";
+            buttonGenerarReportes.UseVisualStyleBackColor = false;
+            buttonGenerarReportes.Click += buttonGenerarReportes_Click;
+            // 
+            // buttonManejarEspera
+            // 
+            buttonManejarEspera.BackColor = Color.FromArgb(128, 128, 255);
+            buttonManejarEspera.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonManejarEspera.Location = new Point(322, 294);
+            buttonManejarEspera.Name = "buttonManejarEspera";
+            buttonManejarEspera.Size = new Size(191, 65);
+            buttonManejarEspera.TabIndex = 7;
+            buttonManejarEspera.Text = "Manejar Lista de Espera";
+            buttonManejarEspera.UseVisualStyleBackColor = false;
+            buttonManejarEspera.Click += buttonManejarEspera_Click;
+            // 
+            // buttonGestionarRequisitos
+            // 
+            buttonGestionarRequisitos.BackColor = Color.FromArgb(128, 128, 255);
+            buttonGestionarRequisitos.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonGestionarRequisitos.Location = new Point(82, 294);
+            buttonGestionarRequisitos.Name = "buttonGestionarRequisitos";
+            buttonGestionarRequisitos.Size = new Size(191, 65);
+            buttonGestionarRequisitos.TabIndex = 6;
+            buttonGestionarRequisitos.Text = "Gestionar Requisitos Académicos";
+            buttonGestionarRequisitos.UseVisualStyleBackColor = false;
+            buttonGestionarRequisitos.Click += buttonGestionarRequisitos_Click;
+            // 
+            // buttonGestionarProfesores
+            // 
+            buttonGestionarProfesores.BackColor = Color.FromArgb(128, 128, 255);
+            buttonGestionarProfesores.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonGestionarProfesores.Location = new Point(82, 381);
+            buttonGestionarProfesores.Name = "buttonGestionarProfesores";
+            buttonGestionarProfesores.Size = new Size(191, 65);
+            buttonGestionarProfesores.TabIndex = 8;
+            buttonGestionarProfesores.Text = "Gestionar Perfiles de Profesores";
+            buttonGestionarProfesores.UseVisualStyleBackColor = false;
+            // 
             // FrmPanelAdmin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDark;
-            ClientSize = new Size(599, 415);
+            ClientSize = new Size(599, 539);
+            Controls.Add(buttonGestionarProfesores);
+            Controls.Add(buttonManejarEspera);
+            Controls.Add(buttonGestionarRequisitos);
+            Controls.Add(buttonGenerarReportes);
             Controls.Add(buttonMostrarEstudiantes);
             Controls.Add(buttonCerrarSesion);
             Controls.Add(buttonGestionarCursos);
@@ -119,5 +174,9 @@
         private Button buttonGestionarCursos;
         private Button buttonCerrarSesion;
         private Button buttonMostrarEstudiantes;
+        private Button buttonGenerarReportes;
+        private Button buttonManejarEspera;
+        private Button buttonGestionarRequisitos;
+        private Button buttonGestionarProfesores;
     }
 }

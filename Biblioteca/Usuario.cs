@@ -9,7 +9,8 @@ namespace Biblioteca
     public enum Rol
     {
         administrador,
-        estudiante
+        estudiante,
+        profesor
     }
     public class Usuario
     {
